@@ -72,7 +72,7 @@ body{
     border-radius: 6px;
     color: rgb(0, 255, 4);
     transform: fadeinup 3s;
-    animation: readmore 4.5s;
+    animation: readmore 4.2s;
 }
 #landing .button:hover{
     background: rgb(248, 251, 242);

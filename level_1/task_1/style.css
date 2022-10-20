@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    color: rgb(248, 251, 242);
+}
+#landing{
+    background-image: url('landing_background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+#landing h5{
+    font-size: 48px;
+    padding: 5px;
+    position: relative;
+    animation: arnab 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes arnab {
+    from{
+        color: transparent;
+        transition: ease-in;
+        margin-bottom: 50px;
+    }
+    to {
+    font-size: 48px;
+    padding: 5px;
+    transform: scale(1) translate(0px);
+    }
+}
+#landing h6{
+    font-size: 36px;
+    padding: 5px;
+    position: relative;
+    animation: wellcome 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: transparent;
+}
+@keyframes wellcome {
+    from{
+        color: transparent;
+        transition: ease-in;
+        transform: scale(.7);
+    }
+    to {
+    font-size: 36px;
+    padding: 5px;
+    transform: scale(1) translate(0px);
+    color: rgb(248, 251, 242);
+    }
+}
+#landing .button{
+    line-height: .5;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px;
+    border: rgb(248, 251, 242) .5px solid;
+    border-radius: 6px;
+    color: rgb(0, 255, 4);
+    transform: fadeinup 3s;
+    animation: readmore 4.5s;
+}
+#landing .button:hover{
+    background: rgb(248, 251, 242);
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+@keyframes readmore{
+    0%{
+        transform: scale(0);
+
+    }
+    95%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
